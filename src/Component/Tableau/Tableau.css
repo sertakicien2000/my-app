@@ -1,0 +1,29 @@
+table{
+    margin-top: 50px;
+    margin-left: 200px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.act{
+    width: 80px;
+
+}
+th{
+    font-weight: bolder;
+    background-color: rgb(122, 158, 182);
+    width: 272px;
+    border: 1px solid black;
+}
+td{
+    background-color: white !important;
+    border: 1px solid black;
+}
+
+#suppr{
+    margin-bottom: 2px;
+    padding-top: 2px !important;
+    height: 20px;
+    font-size: 10px;
+    font-weight: bolder;
+}
