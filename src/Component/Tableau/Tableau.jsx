@@ -1,24 +1,35 @@
 import React from 'react';
- 
-export default class Tableau extends React.Component {
-   render() {
-      return (
-        <div>
-            <table>
-                <tr>
-                    <th>id</th>
-                    <th>Nom</th>
-                    <th>Prenom</th>
-                    <th>Action</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                </tr>
-            </table>
-        </div>
-      )
-   }
-}
+const Tableau = props => (
+      <table>
+      <thead>
+        <tr>
+          <th className="act">id</th>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th className="act">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {props.users.length > 0 ? (
+          props.users.map(user => (
+            <tr>
+              <td>{user.id}</td>
+              <td>{user.nom}</td>
+              <td>{user.prenom}</td>
+              <td>
+          <button aria-label="Supprimer" id="suppr" className="btn btn-danger"
+            onClick={() => {props.suppr(user.id)}}>X</button>
+              </td>
+            </tr>
+          ))
+        ) : (
+          <tr>
+            <td colSpan={4}>Aucun enregistrement</td>
+          </tr>
+        )}
+      </tbody>
+      </table>
+)
+
+
+export default Tableau;

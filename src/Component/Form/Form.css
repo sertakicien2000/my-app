@@ -1,3 +1,16 @@
 input{
-    margin: 20px 20px 20px 0px;
+    width: 220px;
+    height: 42px;
+    margin: 20px 20px 20px 5px !important;
+    border-radius: 5px;
+    border: none;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bolder; 
+}
+
+#ajout{
+    font-weight: bolder;
 }

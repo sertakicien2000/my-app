@@ -31,3 +31,14 @@
     transform: rotate(360deg);
   }
 }
+
+.App-form{
+  margin-top: 50px;
+}
+
+.container{
+  background-image: linear-gradient(rgb(136, 250, 108),rgb(244, 247, 97));
+  padding: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
