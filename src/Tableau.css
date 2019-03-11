@@ -1,0 +1,31 @@
+table{
+    margin-top: 50px;
+    text-align: center;
+    border: 1px solid rgb(21, 64, 252) !important;
+}
+
+.act{
+    width: 150px;
+
+}
+th{
+    font-weight: bolder;
+    border: 1px solid rgb(21, 64, 252) !important;
+}
+td{
+    background-color: white !important;
+    border: 1px solid rgb(21, 64, 252) !important;
+}
+
+#suppr{
+    margin-bottom: 2px;
+    padding-top: 2px !important;
+    height: 20px;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.react-confirm-alert-body {
+    color: black;
+    background-color: rgb(253, 139, 139);
+}
