@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Form = props => {
-   const initial = { id: '', nom: '', prenom: '' }
+   const initial = { id: null, nom: '', prenom: '' }
    const [ user, setUser ] = useState(initial)
    const changed = event => {
    const { name, value } = event.target
@@ -15,6 +15,7 @@ const Form = props => {
          if (!user.nom || !user.prenom) return
      
          props.ajouter(user)
+         props.setCounte(props.count + 1)
          setUser(initial)
        }}>
 			<label>Nom</label>
