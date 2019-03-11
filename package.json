@@ -7,6 +7,7 @@
     "jquery": "^3.3.1",
     "react": "^16.8.4",
     "react-awesome-modal": "^2.0.5",
+    "react-confirm-alert": "^2.3.0",
     "react-create": "^1.0.2",
     "react-dom": "^16.8.4",
     "react-router": "^4.3.1",
